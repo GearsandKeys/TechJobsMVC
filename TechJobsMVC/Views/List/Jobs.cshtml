@@ -8,3 +8,16 @@
 
 
 </div>
+
+@foreach (Job result in ViewBag.jobs)
+{
+    <table class="job-listing">
+        <tr> <th>ID: @result.Id</th> </tr>
+        <tr> <th>Name: @result.Name </th> </tr>
+        <tr> <th>Employer: @result.Employer </th> </tr>
+        <tr> <th>Location: @result.Location </th> </tr>
+        <tr> <th>Position Type: @result.PositionType</th> </tr>
+        <tr> <th>Skill: @result.CoreCompetency</th> </tr>
+    </table>
+}
+
